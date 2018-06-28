@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Signika:300,600');
+
+// color variables 
+
+$white: #FFFFFF;
+$orange: #f0a055;
+$slate: #414141;
+$grey: #979797;
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1,
+h3,
+h4,
+span {
+  font-family: 'Signika', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: $slate;
+}
+
+p {
+  color: $slate;
+  font-size: 1.25rem;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+ol {
+  li {
+    padding: 0;
+    margin: 0;
+    color: $slate;
+    font-size: 1.25rem;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0;
+    margin: 0;
+    color: $slate;
+    font-size: 1.25rem;
+    list-style: none;
+  }
+}
+
+hr {
+  margin-top: 72px;
+  border-top: 1px solid #f2f2f2;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.sub-title {
+  color: $slate;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.85rem !important;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 1rem 0;
+}
+
+.statement {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.body-link {
+  display: inline;
+  color: $slate;
+  border-bottom: 1px dotted $slate;
+  padding-bottom: 0.35rem;
+  line-height: 3.4;
+  transition: 0.5s;
+}
+
+.body-link:hover {
+  color: $orange;
+  border-bottom: 1px dotted $orange;
+}
+
+
+@media screen and (min-width: 769px) {
+  hr {
+    margin-top: 97px;
+  }
+}
+

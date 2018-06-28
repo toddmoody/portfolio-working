@@ -1,0 +1,24 @@
+$grey_background: #f2f1f8;
+$slate: #4A4A4A;
+
+#intro {
+    background: $grey_background;
+    padding: 5rem 0 5.5rem 0;
+ 
+    .card-wrapper {
+        margin-top: 3.85rem;
+    }
+    
+    @media screen and (min-width: 769px) {
+        .intro-wrapper {
+            max-width: 68.5%;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        .intro-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+}
+}

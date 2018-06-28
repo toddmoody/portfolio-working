@@ -1,0 +1,262 @@
+$white: #FFFFFF;
+$orange: #f0a055;
+$slate: #414141;
+$blue: #31C2DB;
+$grey: #c5c5c5;
+$cards: #fbfbfb;
+
+#about {
+    padding: 2.8rem 0;
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.95rem;
+        div {
+            margin: 0.25rem 0.25rem;
+            border: 1px solid $grey;
+            border-radius: 7px;
+            padding: 1.65rem 1.65rem;
+            img {
+                max-width: 48px;
+            }
+        }
+        h4 {
+            color: $slate;
+            font-size: 1.15rem;
+            margin-bottom: 0.35rem;
+        }
+        p {
+            color: grey;
+        }
+        .tooltip {
+            display: inline;
+            border-bottom: 1px dotted $grey;
+            padding-bottom: 0.35rem;
+            line-height: 3.4;
+            transition: 0.5s;
+        }
+        .tooltip:hover {
+            color: $slate;
+            border-bottom: 1px dotted $slate;
+        }
+        .code-card {
+            border: 1px solid $orange;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #about {
+        padding: 3.8rem;
+        .services {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1320px;
+            margin-top: 85px;
+            div {
+                width: 33%;
+            }
+            .ui-card,
+            .marketing-card, {
+                margin-top: 5.75rem;
+            }
+        }
+    }
+  }
+
+  #work {
+    padding: 2.8rem 0;
+    .work-intro {
+        padding: 80px 0 245px 0;
+        background-image: linear-gradient(-177deg, #31C2DB 20%, #7FE5F7 89%);
+        h3,
+        p {
+            color: white;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dark-link {
+            text-decoration: none;
+            color: $white;
+            border-bottom: 1px dotted $white;
+            padding-bottom: 0.20rem;
+            transition: 0.5s;
+        }
+        .logo-strip {
+            display: none;
+            color: $white;
+
+        }
+    }
+  
+    .projects {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: -165px;
+        .project-card {
+            margin: 0.65rem 0.65rem;
+            border: 1px solid $grey;
+            border-radius: 7px;
+            transition: all .3s ease;
+            box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+            text-decoration: none;
+            min-width: 429px;
+            .project-img {
+                width: 429px;
+                height: 285px;
+                margin: 0 auto;
+                justify-content: center;
+                padding-left: 0.95rem;
+                padding-right: 0.95rem;                
+            }
+            .padding-top {
+                padding-top: 0.95rem;
+            }
+            .project-rft {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: rgb(207, 207, 207);
+                border-radius: 7px 7px 0 0;
+            }
+            .project-dc {
+                display: flex;
+                flex-direction: row;
+                background: url(../assets/dc-thumb-bgrd.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 7px 7px 0 0;
+            }
+            .project-ar {
+    
+                border-radius: 7px 7px 0 0;
+ 
+            }
+            .project-mm {
+              
+                border-radius: 7px 7px 0 0;
+
+            }
+            .project-pf {
+            
+                border-radius: 7px 7px 0 0;
+        
+            }
+            .project-bh {
+         
+                border-radius: 7px 7px 0 0;
+          
+            }
+            .project-dets {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 1.65rem 1.65rem;
+               h3 {
+                   margin: 0 0 0.35rem 0;
+                   font-size: 1.25rem;
+                   font-weight: 300;
+                   transition: all .5s;
+               }
+                p {
+                   font-size: 0.85rem;
+                   margin: 0.25rem 0 0 0;
+                   transition: all .5s;
+               }
+            }
+        }
+        .project-card:hover {
+            box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+            background: $cards;
+        }
+    }   
+  }
+
+  @media screen and (min-width: 769px) {
+    #work {
+        padding: 4.8rem 0;
+        .work-intro {
+            .logo-strip {
+                padding: 80px 0 45px 0;
+                margin: 0 auto;
+                display: block;
+                img {
+                    width: 88%;
+                    height: auto;
+                }
+            }
+        }
+        .projects {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1320px;
+            .project-card {
+                width: 42%;
+            }
+        }
+    }
+  }
+
+  #cta {
+      background: $slate;
+      margin: 0 auto;
+    .cta-wrapper {
+        height: 9.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            color: $white;
+            font-weight: 300;
+            font-size: 0.85rem;
+            margin: 0 1.95rem 0 0;
+            padding: 1rem 0 1rem 0;
+        }
+        .hero-btn {
+            padding: 1rem 2.2rem;
+            font-size: 1rem;
+            border: 1px solid $orange;
+            border-radius: 50px;
+            background-color: transparent;
+            color: $orange;
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-decoration: none;
+            }
+        .hero-btn:hover {
+            padding: 1rem 2.6rem;
+            background-color: $orange;
+            color: #3F3D4F;
+            transition-delay: 0s;
+            transition-duration: 0.3s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+        }  
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    #cta {
+        margin-top: 2.5rem;
+        max-width: 64%;
+        border-radius: 7px;
+        margin-bottom: -5rem;
+        z-index: 5;
+        position: relative;
+        .cta-wrapper {
+            h2 {
+                font-size: 1.35rem;
+                margin: 0 2.95rem 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$white: #FFFFFF;
+$orange: #f0a055;
+$slate: #414141;
+$blue: #31C2DB;
+$grey: #c5c5c5;
+$cards: #fbfbfb;
+
+#footer {
+    background-image: linear-gradient(-162deg, #31C2DB 0%, #7FE5F7 85%, #7FE5F7 85%);
+    .footer-wrapper {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        p {
+            color: white;
+            font-size: 1.25rem;
+        }
+        div img {
+            max-width: 28px;
+            margin: 0 0.35rem;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #footer {
+        z-index: 1;
+        .footer-wrapper {
+            height: 11.5rem;
+            align-items: flex-end;
+            padding-bottom: 1rem;
+        }
+    }
+    
+    
+}
