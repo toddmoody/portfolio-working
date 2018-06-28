@@ -22,15 +22,18 @@ import '../css/Home.scss';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div id="home-bgrd">
                 <section className="header-wrapper">
                     <header>
                         <img className="logo" src={Logo}></img>
                         <nav>
-                            <Link className="mob-hide" to="/#about">About</Link>
-                            <Link className="mob-hide" to="/#work">Work</Link>
-                            <Link className="mob-btn" to="/contact">Get in touch</Link>
+                            <Link className="nav-item mob-hide" to="/#about">About</Link>
+                            <Link className="nav-item mob-hide" to="/#work">Work</Link>
+                            <Link className="nav-item mob-hide" to="/#work">Clients</Link>
                         </nav>
+                        <div>
+                            <Link className="nav-item-plus" to="/contact">Get in touch</Link>
+                        </div>
                     </header>
                     <div className="content-block">
                         <div>
@@ -41,20 +44,19 @@ class Home extends Component {
                             <h1>UI/UX Developer. I build:</h1>
                             <Typewriter />
                         </div>
-                        <div className="btn-wrapper">
-                            <a href="#" className="hero-btn">I'm available for hire</a>
-                        </div>
+               
                     </div>  
                     <div className="scroll-down">
                         <Link to="/#about"><FontAwesomeIcon className="bounce arrow" size="lg" icon={FaChevronDown}/></Link>
                     </div>
                 </section>
-                <hr />
-                <section id="about" className="wrapper">
+                <section id="about">
                     <div>
-                        <h3 className="sub-title">What I do</h3>
-                        <p className="statement">Nice to meet you. I’m a front-end UI/UX developer based in Tauranga, New Zealand. I partner with design teams, agencies and clients to build highly intuative web applications. My projects always have a stong focus on responsive design, user experience, performance, and accessability.</p> 
+                        <h3 className="sub-title-dk">What I do</h3>
+                        <p className="statement-dk">Nice to meet you. I’m a front-end UI/UX developer based in Tauranga, New Zealand. I partner with design teams, agencies and clients to build highly intuative web applications. My projects always have a stong focus on responsive design, user experience, performance, and accessability.</p> 
                     </div>
+                </section>
+                <section id="services"> 
                     <div className="services">
                         <div className="ui-card">
                             <img src={iconUI}></img>
@@ -72,7 +74,6 @@ class Home extends Component {
                             <p className="tooltip" data-tip="HTML, CSS, SASS, JavaScript, Material Design, React.js, Node.js">Languages & Tech</p><br/>
                             <p className="tooltip" data-tip="VS Code, Atom, Git & GitHub, Chrome Dev Tools, WebPack, Babel">Dev Tools</p>
                         </div>
-
                         <div className="marketing-card">
                         <img src={iconMarketing}></img>
                             <h4>SEO & Marketing</h4>

@@ -1,12 +1,25 @@
 $white: #FFFFFF;
 $orange: #f0a055;
-$slate: #414141;
-$blue: #31C2DB;
 $grey: #c5c5c5;
 $cards: #fbfbfb;
 
+$dark: #414141;
+$slate: #414141;
+$green: #97FFCA;
+$blue: #1344C0;
+$blue-alt: #204FC6;
+$light: #E7EEED;
+
+#home-bgrd {
+    background: $light;
+}
+
 #about {
-    padding: 2.8rem 0;
+    background: $blue;
+    padding: 5.8rem 0;
+}
+
+#services {
     .services {
         display: flex;
         flex-direction: column;
@@ -40,30 +53,39 @@ $cards: #fbfbfb;
             border-bottom: 1px dotted $slate;
         }
         .code-card {
-            border: 1px solid $orange;
+            border: 1px solid $grey;
         }
     }
 }
 
 @media screen and (min-width: 769px) {
     #about {
-        padding: 3.8rem;
+        padding: 7.8rem 0 22.8rem 0;
+    }
+
+    #services {
+        margin-top: -22.5rem;
         .services {
             flex-direction: row;
             justify-content: space-between;
             margin-left: auto;
             margin-right: auto;
-            max-width: 1320px;
+            max-width: 1440px;
             margin-top: 85px;
             div {
                 width: 33%;
             }
+            .code-card {
+                background: $light;
+            }
             .ui-card,
             .marketing-card, {
                 margin-top: 5.75rem;
+                background: $light;
             }
         }
     }
+
   }
 
   #work {

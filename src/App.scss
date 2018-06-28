@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:700|Lato:400,900|Montserrat:400,700,800,900|Open+Sans|Raleway|Signika:600');
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Signika:300,600');
 
 // color variables 
 
@@ -7,12 +7,14 @@ $white: #FFFFFF;
 $orange: #f0a055;
 $slate: #414141;
 $grey: #979797;
+$light: #E7EEED;
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  color: $light;
 }
 
 body {
@@ -69,18 +71,22 @@ hr {
   margin: 0 auto;
 }
 
-.sub-title {
-  color: $slate;
+.sub-title-dk {
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.85rem !important;
-  font-weight: 300;
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  font-size: 2.25rem !important;
+  font-weight: 400;
   line-height: 1.4;
   margin: 0 0 1rem 0;
+  letter-spacing: 0.2;
 }
 
-.statement {
-  font-size: 1.25rem;
-  line-height: 1.45;
+.statement-dk {
+  color: #FFF;
+  font-size: 1.30rem;
+  line-height: 1.75;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -88,7 +94,6 @@ hr {
 .body-link {
   display: inline;
   color: $slate;
-  border-bottom: 1px dotted $slate;
   padding-bottom: 0.35rem;
   line-height: 3.4;
   transition: 0.5s;
