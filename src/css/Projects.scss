@@ -37,7 +37,7 @@ $light-bgrd: #fbfbfb;
     }
 }
 
-#rft {
+#project {
         .work-header {
             display: flex;
             flex-direction: column;
@@ -81,7 +81,7 @@ $light-bgrd: #fbfbfb;
     }
 
 @media screen and (min-width: 1150px) {
-    #rft {
+    #project {
         .work-header {
             display: flex;
             flex-direction: row;
@@ -134,7 +134,7 @@ $light-bgrd: #fbfbfb;
 }
 
 @media screen and (min-width: 1520px) {
-    #rft {
+    #project {
      .image-block {
          img {
              max-width: 1440px;

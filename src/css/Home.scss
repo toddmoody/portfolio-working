@@ -15,7 +15,7 @@ $light: #E7EEED;
 }
 
 #about {
-    background: $blue;
+    background: $light;
     padding: 5.8rem 0;
 }
 
@@ -155,7 +155,14 @@ $light: #E7EEED;
                 border-radius: 7px 7px 0 0;
             }
             .project-ar {
-    
+                height: 285px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                background: url(../assets/augusta-thumb.jpg);
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: cover;
                 border-radius: 7px 7px 0 0;
  
             }

@@ -5,6 +5,8 @@ import './App.scss';
 
 import Home from './pages/Home'
 import Rft from './pages/Rft'
+import Detail from './pages/Detail'
+import Augusta from './pages/Augusta'
 import Contact from './components/Contact'
 
 class App extends Component {
@@ -16,6 +18,8 @@ class App extends Component {
             <div className="content">
               <Route exact path="/" component={Home}/>
               <Route exact path="/work-rft" component={Rft}/>
+              <Route exact path="/work-detail" component={Detail}/>
+              <Route exact path="/work-augusta" component={Augusta}/>
               <Route exact path="/contact" component={Contact}/>
             </div>
           </div>

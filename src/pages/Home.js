@@ -101,22 +101,24 @@ class Home extends Component {
                                 <p>React Single Page Application</p>
                             </div>
                         </Link>
-                        <div className="project-card">
+                        <Link to="/work-detail" className="project-card">
                             <div className="project-dc">
-                            <img className="project-img padding-top" src={DCThumb}></img>
+                                <img className="project-img padding-top" src={DCThumb}></img>
                             </div>
                             <div className="project-dets">
                                 <h3>Detail Connect</h3>
                                 <p>JavaScript / Google Maps APIv3 integration</p>
                             </div> 
-                        </div>
-                        <div className="project-card">
-                            <div className="project-img project-ar"></div>
+                        </Link>
+                        <Link to="/work-augusta" className="project-card">
+                            <div className="project-ar">
+                               
+                            </div>
                             <div className="project-dets">
                                 <h3>Augusta Rise</h3>
                                 <p>React Single Page Application</p>
                             </div>
-                        </div>
+                        </Link>
                         <div className="project-card">
                             <div className="project-img project-mm"></div>
                             <div className="project-dets">
