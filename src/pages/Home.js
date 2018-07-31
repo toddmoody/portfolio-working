@@ -23,18 +23,15 @@ class Home extends Component {
     render() {
         return (
             <div id="home-bgrd">
-                <section className="header-wrapper">
-                    <header>
+                <header className="header-wrapper">
+                    <nav>
                         <img className="logo" src={Logo}></img>
-                        <nav>
+                        <div>
                             <Link className="nav-item mob-hide" to="/#about">About</Link>
                             <Link className="nav-item mob-hide" to="/#work">Work</Link>
-                            <Link className="nav-item mob-hide" to="/#work">Clients</Link>
-                        </nav>
-                        <div>
                             <Link className="nav-item-plus" to="/contact">Get in touch</Link>
                         </div>
-                    </header>
+                    </nav>
                     <div className="content-block">
                         <div>
                             <img className="profile-pic" src={ProfilePic} />
@@ -44,12 +41,14 @@ class Home extends Component {
                             <h1>UI/UX Developer. I build:</h1>
                             <Typewriter />
                         </div>
-               
+                        <div className="btn-wrapper">
+                            <a href="" className="hero-btn">Let's chat</a>
+                        </div>
                     </div>  
                     <div className="scroll-down">
                         <Link to="/#about"><FontAwesomeIcon className="bounce arrow" size="lg" icon={FaChevronDown}/></Link>
                     </div>
-                </section>
+                </header>
                 <section id="about">
                     <div>
                         <h3 className="sub-title-dk">What I do</h3>
@@ -126,13 +125,15 @@ class Home extends Component {
                                 <p>Flexbox / JS pricing table</p>
                             </div>
                         </div>
-                        <div className="project-card">
-                            <div className="project-img project-pf"></div>
-                            <div className="project-dets">
-                                <h3>Portfolio UI/UX</h3>
-                                <p>The UI/UX design process behind my portfolio site</p>
-                            </div>
+                        <Link to="/work-matamata" className="project-card">
+                        <div className="project-dc">
+                            <img className="project-img padding-top" src={DCThumb}></img>
                         </div>
+                        <div className="project-dets">
+                            <h3>Matamata Country Lodge</h3>
+                            <p>Bootstrap v4 website and SEO</p>
+                        </div> 
+                    </Link>
                         <div className="project-card">
                             <div className="project-img project-bh"></div>
                             <div className="project-dets">

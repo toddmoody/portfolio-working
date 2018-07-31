@@ -4,58 +4,62 @@ $slate: #414141;
 $green: #97FFCA;
 $blue: #1344C0;
 $blue-alt: #204FC6;
+$orange: #f0a055;
 $light: #E7EEED;
 
 .header-wrapper {
     height: 100vh;
     width: 100%;
-    background-color: #FFF;
-    background-image: url("../assets/header-hero.png");
+    background-color: black;
+    background-image: url("../assets/header-tm.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
-    header {
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 70px;
-        margin: 0.95rem 1.65rem;
+        position: fixed;
+        top: 0;
+        height: 95px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.616);
+        padding: 2rem 2rem;
         .logo {
             width: 112px;
             height: 40px;
             margin-left: 18px;
             margin-right: 48px;
         }
-        nav {
-            .nav-item {
-             display: inline;
-             text-decoration: none;
-             color: $blue;  
-             font-size: 0.95rem;
-             font-weight: bold; 
-             text-transform: uppercase;
-             padding: 0 1.65rem;
-            }
-            .mob-hide {
-               display: none;
-            }
+        .nav-item {
+            display: inline;
+            text-decoration: none;
+            color: white;  
+            font-size: 0.95rem;
+            font-weight: bold; 
+            text-transform: uppercase;
+            padding: 0 1.65rem;
         }
+        .mob-hide {
+            display: none;
+        }
+      
         .nav-item-plus {
             display: inline;
             text-decoration: none;
-            color: $blue;  
-            border: 1px solid $blue;
+            color: white;  
             font-size: 0.95rem;
             font-weight: bold; 
             text-transform: uppercase;
             padding: 1.05rem 2.15rem;
             border-radius: 45px;
             transition: all 0.5s;
+            background: rgb(95, 95, 95);
            }
         .nav-item-plus:hover {
             color: #FFF;  
@@ -72,8 +76,7 @@ $light: #E7EEED;
         .dynamic-block {
             margin-top: 1.85rem;
             h1 {
-            font-family: 'Lato', sans-serif;
-            color: $slate;
+            color: white;
             margin: 0.6rem 0 0 0;
             font-size: 1.75rem;
             font-weight: 900;
@@ -81,9 +84,8 @@ $light: #E7EEED;
             letter-spacing: -.1rem;
         }
         span {
-            font-family: 'Lato', sans-serif;
             margin: 0;
-            color: $slate;
+            color: white;
             font-size: 1.75rem;
             font-weight: 800;
             line-height: 2.10rem;
@@ -119,6 +121,9 @@ $light: #E7EEED;
     }
     .scroll-down { 
         margin: 0;
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
         .arrow {
             font-size: 1.25rem;
             }
@@ -171,72 +176,89 @@ $light: #E7EEED;
         }
 
         @media screen and (min-width: 568px) {
-            header {
-                nav {
-                    a {
-                        font-size: 0.85rem;
+        
+            nav {
+                a {
+                    font-size: 0.85rem;
+                }
+            }
+            .content-block {
+                .dynamic-block {
+                    h1,
+                    span {
+                        margin: 0;
+                        font-size: 2.15rem;
+                        font-weight: 700;
+                        line-height: 3.45rem;
+                        letter-spacing: -.1rem;
                     }
                 }
-            }
-            .dynamic-block {
-                h1,
-                span {
-                    margin: 0;
-                    font-size: 2.15rem;
-                    font-weight: 700;
-                    line-height: 3.45rem;
-                    letter-spacing: -.1rem;
+                .btn-wrapper {
+                    .hero-btn {
+                        display: inline-block;
+                        padding: 1rem 2.2rem;
+                        font-size: 0.85rem !important;
+                        font-weight: 600;
+                        border: 2px solid $blue;
+                        border-radius: 50px;
+                        height: auto;
+                        background-color: transparent;
+                        color: #FFF;
+                        font-size: 0.85rem;
+                        }  
                 }
-            }
-            .btn-wrapper {
-                .hero-btn {
-                    display: inline-block;
-                    padding: 1rem 2.2rem;
-                    font-size: 0.85rem !important;
-                    font-weight: 600;
-                    border: 2px solid $blue;
-                    border-radius: 50px;
-                    height: auto;
-                    background-color: transparent;
-                    color: #FFF;
-                    font-size: 0.85rem;
-                    }  
             } 
         }
 
         @media screen and (min-width: 769px) {
-            header {
-                nav {
-                    .mob-hide {
-                        display: inline-block;
-                    }   
-                }
+            nav {
+                .mob-hide {
+                    display: inline-block !important;
+                }   
             }
         }
         
 
-        @media screen and (min-width: 954px) {
+        @media screen and (min-width: 1047px) {
             .content-block {
+                text-align: left;
+                padding: 2.65rem;
                 .profile-pic {
-                    width: 115px;
+                    width: 75px;
                     height: auto;
                     border-radius: 50%;
                     z-index: 2;
                 }
                 .dynamic-block {
                     h1 {
-                        font-size: 3.8rem;
-                        line-height: 5.25rem;
+                        font-size: 3.25rem;
+                        line-height: 3.75rem;
                     }
                     span {
-                        font-size: 3.8rem;
-                        line-height: 5.95rem;
+                        font-size: 3.25rem;
+                        line-height: 3.95rem;
                     }
                 }
             }
         }
 
-        @media screen and (min-width: 1350px) {
+        @media screen and (min-width: 1795px) {
+            .content-block {
+                padding: 7.65rem;
+                .profile-pic {
+                    width: 85px;
+                }
+                .dynamic-block {
+                    h1 {
+                        font-size: 4.75rem;
+                        line-height: 5.0rem;
+                    }
+                    span {
+                        font-size: 4.75rem;
+                        line-height: 5.25rem;
+                    }
+                }
+            }
         }
 }
 
@@ -268,19 +290,21 @@ $light: #E7EEED;
             .back {
             text-decoration: none;
             text-transform: uppercase;
-            color: $blue;
+            color: $slate;
             font-size: 1.15rem;
             margin-right: 18px;
             transition: all 0.5s;
+            p {
+                display: inline;
+                color: $orange;
+                margin-left: 16px;
+                font-size: 1.45rem;
             }
-            .back:hover {
-                margin-right: 1.4rem;
-            }
-            .back-arrow {
-                align-self: center;
-                margin-left: 18px;
-            }
-           
+    
+
+        }
+        .back:hover {
+            margin-right: 1.4rem;
         }
     }  
 }
@@ -291,7 +315,7 @@ $light: #E7EEED;
     }
 }
 
-
+}
 
 
 

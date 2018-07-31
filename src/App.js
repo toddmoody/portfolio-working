@@ -8,6 +8,7 @@ import Rft from './pages/Rft'
 import Detail from './pages/Detail'
 import Augusta from './pages/Augusta'
 import Contact from './components/Contact'
+import Matamata from './pages/Matamata';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact path="/work-rft" component={Rft}/>
               <Route exact path="/work-detail" component={Detail}/>
               <Route exact path="/work-augusta" component={Augusta}/>
+              <Route exact path="/work-matamata" component={Matamata}/>
               <Route exact path="/contact" component={Contact}/>
             </div>
           </div>
